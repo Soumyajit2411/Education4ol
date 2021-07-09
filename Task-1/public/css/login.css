@@ -1,0 +1,108 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #e8f0f2;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.checkbox {
+  text-align: left;
+}
+.float-container {
+  display: flex;
+}
+.already {
+  margin-top: 5px;
+}
+.already a {
+  text-decoration: unset;
+}
+.child1 {
+  float: left;
+  width: 50%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.child2 {
+  float: right;
+  width: 50%;
+  margin-right: 5px;
+}
+.child2 p {
+  font-weight: bold;
+}
+.h1 {
+  font-family: "Redressed", cursive;
+  position: absolute;
+  top: 15%;
+  left: 41%;
+  font-size: 45px;
+  color: aquamarine;
+}
+.h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.email {
+  margin-bottom: 20px;
+}
+.pass {
+  margin-bottom: 20px;
+}
+
+main {
+  width: auto;
+}
+
+.edu {
+  position: relative;
+}
+
+.sign {
+  width: 100%;
+}
+.copy {
+  display: unset;
+  position: fixed;
+  bottom: 0px;
+}
+
+.card-body {
+  padding-top: 0px;
+}
+
+.btn {
+  background-color: #d54c4c;
+}
+
+.form-signin {
+  max-width: 100%;
+  padding: 20px;
+  margin: 0px 300px 50px 300px;
+  box-sizing: unset;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
