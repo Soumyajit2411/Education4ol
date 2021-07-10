@@ -6,9 +6,11 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/signup.html");
 });
 app.get("/login", (req, res) => {
-    res.sendFile(__dirname + "/login.html");
-  });
-  
+  res.sendFile(__dirname + "/login.html");
+});
+app.get("/logout", (req, res) => {
+  res.sendFile(__dirname + "/logout.html");
+});
 
 app.get("/contact", (req, res) => {
   res.send("Contact Me!");

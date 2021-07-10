@@ -67,7 +67,7 @@ main {
 .sign {
   width: 100%;
 }
-.copy {
+footer {
   display: unset;
   position: fixed;
   bottom: 0px;
