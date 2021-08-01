@@ -1,0 +1,37 @@
+.card-img-tops {
+  height: 100px;
+  width: 200px;
+}
+.det {
+  height: 100px;
+  padding-left: 0px;
+}
+.courses-title {
+  font-size: 15px;
+  color: black;
+}
+.cardss {
+  border: 0;
+  background-color: transparent;
+  margin: 15px;
+}
+.prices {
+  font-size: 15px;
+  text-align: left;
+}
+.coursess {
+  margin: 20px 30px 50px 30px;
+}
+.programming {
+  color: white;
+  text-align: left;
+  margin: 15px;
+  font-weight: 900;
+}
+.cust-footer {
+  position: unset;
+  bottom: unset;
+}
+#whole {
+  margin-bottom: 100px;
+}

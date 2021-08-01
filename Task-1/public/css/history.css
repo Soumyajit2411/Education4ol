@@ -1,0 +1,31 @@
+.details {
+    width: 1000px;
+    margin: 0px 125px 25px 125px;
+    float: center;
+  }
+  .table {
+    font-family: "Merriweather", serif;
+  }
+  
+  table tr td,
+  table tr th {
+    background-color: transparent !important;
+    color: white;
+    font-weight: 900;
+  }
+  .btn {
+    text-decoration: none;
+    color: white;
+  }
+  .btn:hover {
+    color: teal;
+  }
+  tr {
+    border-top: hidden;
+    border-bottom: hidden;
+  }
+  
+  .table-sm tbody td {
+    padding: 0;
+  }
+  

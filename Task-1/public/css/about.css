@@ -1,0 +1,10 @@
+.about {
+  margin: 20px 100px 20px 100px;
+  padding: 20px 100px 20px 100px;
+  background: white;
+  position: absolute;
+  opacity: 0.5;
+  color: black;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+}

@@ -1,0 +1,32 @@
+.profile {
+  width: 1000px;
+  height: 400px;
+  margin: 0px 250px 0px 250px;
+}
+.de {
+  width: 200px;
+  text-align: left;
+  padding: 25px;
+}
+.buttons {
+  width: 250px;
+}
+.card-img-right {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  text-align: left;
+  margin-left: 25px;
+}
+hr {
+  margin: 0px;
+}
+.card-body {
+  width: 200px;
+}
+h5 {
+  padding: 10px;
+}
+.save {
+  margin-left: 175px;
+}

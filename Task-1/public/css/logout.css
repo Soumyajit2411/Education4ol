@@ -1,45 +1,29 @@
 body {
   background-color: #e8f0f2;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-family: "Playfair Display", serif;
+  margin: 50px 0 50px 0;
+  font-family: "Roboto", "Fira Sans", "Ubuntu", "Oxygen", "Cantarell",
+    sans-serif;
   text-align: center;
+  font-weight: bold;
 }
-.logout {
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
+
 .logout h1 {
-  padding: 10px;
+  margin: 20px;
 }
-.btn {
-  width: 200px;
-  height: 40px;
-  padding: 3px;
-  margin: 0px 20px 0px 20px;
-}
+
 footer {
   background-color: #f3f3f3;
   padding-top: 10px;
-  padding-bottom: 0px;
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
-.social {
-  text-align: center;
-  position: relative;
-  top: 150px;
-}
-.social h1 {
-  font-size: 30px;
-}
 
-.social-links {
-  list-style: none;
-  align-items: center;
+.social {
+  position: relative;
+  top: 200px;
+  font-size: 25px;
 }
 
 .social-links li {
@@ -63,24 +47,30 @@ footer {
 .social-links li a:visited {
   font-size: 160%;
 }
+
 .fab {
   transition: color 0.2s;
   font-size: 55px;
   margin: 20px;
   color: #0086be;
 }
+
 .fa-facebook:hover {
   color: #3b5998;
 }
+
 .fa-twitter:hover {
   color: #00aced;
 }
+
 .fa-linkedin:hover {
   color: #dd4b39;
 }
+
 .fa-github:hover {
   color: #517fa4;
 }
+
 .fa-telegram:hover {
   color: #00adef;
 }

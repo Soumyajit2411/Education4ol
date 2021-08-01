@@ -1,28 +1,37 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+let ejs = require("ejs");
 app.use(express.static("public"));
+app.set("view engine", "ejs");
+app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/signup.html");
+  res.render("home");
 });
 app.get("/login", (req, res) => {
-  res.sendFile(__dirname + "/login.html");
+  res.render("login");
 });
 app.get("/logout", (req, res) => {
-  res.sendFile(__dirname + "/logout.html");
+  res.render("logout");
 });
-
+app.get("/signup", (req, res) => {
+  res.render("signup");
+});
+app.get("/profile", (req, res) => {
+  res.render("profile");
+});
+app.get("/history", (req, res) => {
+  res.render("history");
+});
 app.get("/contact", (req, res) => {
-  res.send("Contact Me!");
+  res.render("contact");
 });
-
 app.get("/about", (req, res) => {
-  res.send("About Me!");
+  res.render("about");
 });
-app.get("/portfolio", (req, res) => {
-  res.send("Portfolio!");
+app.get("/details", (req, res) => {
+  res.render("details");
 });
-
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });

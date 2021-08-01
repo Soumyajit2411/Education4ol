@@ -1,0 +1,17 @@
+.contact {
+  margin: 20px 400px 20px 400px;
+  padding: 20px 75px 20px 75px;
+  background-color: white;
+  position: absolute;
+  color: black;
+  font-family: "Merriweather", serif;
+  text-align: left;
+}
+
+.form-control:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
+.s{
+  margin-left: 80px;
+}

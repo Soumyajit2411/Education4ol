@@ -1,92 +1,101 @@
-html,
 body {
-  height: 100%;
+  background-color: #fff;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bolder;
+  font-family: "Roboto", "Fira Sans", "Ubuntu", "Oxygen", "Cantarell",
+    sans-serif;
+}
+.body {
+  padding-top: 40px;
+}
+.form-signin {
+  margin: 0px 150px 0px 150px;
+  box-sizing: unset;
+}
+.form-sign {
+  margin: 0px 300px 0px 300px;
+  box-sizing: unset;
 }
 
-body {
-  background-color: #e8f0f2;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-family: "Playfair Display", serif;
-  text-align: center;
+.cover-img {
+  position: relative;
+  margin: 20px;
 }
-.checkbox {
-  text-align: left;
+
+.heading {
+  font-family: "Fira Sans", sans-serif;
+  position: absolute;
+  top: 8%;
+  left: 42%;
+  font-size: 30px;
+  color: aquamarine;
 }
+.loghead {
+  top: 14%;
+}
+.sub-heading {
+  font-size: 25px;
+}
+
 .float-container {
   display: flex;
 }
-.already {
-  margin-top: 5px;
-}
-.already a {
-  text-decoration: unset;
-}
-.child1 {
+
+.first-child {
   float: left;
   width: 50%;
-  margin-left: 5px;
-  margin-top: 10px;
 }
-.child2 {
+.second-child {
   float: right;
   width: 50%;
-  margin-right: 5px;
-}
-.child2 p {
-  font-weight: bold;
-}
-.h1 {
-  font-family: "Redressed", cursive;
-  position: absolute;
-  top: 15%;
-  left: 41%;
-  font-size: 45px;
-  color: aquamarine;
-}
-.h3 {
-  font-size: 25px;
-  font-weight: bold;
-}
-.email {
-  margin-bottom: 20px;
-}
-.pass {
-  margin-bottom: 20px;
 }
 
-main {
-  width: auto;
+.form-control {
+  max-height: 45px;
+  margin: 10px;
+}
+.form-select {
+  margin: 10px;
 }
 
-.edu {
-  position: relative;
+.form-floating label {
+  margin: 11px 11px 11px 20px;
+  padding: 0;
 }
 
-.sign {
-  width: 100%;
+.checkbox {
+  text-align: left;
+  margin: 15px;
 }
+
+.signin {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.signin a {
+  text-decoration: unset;
+}
+
 footer {
-  display: unset;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #edf6e5;
   position: fixed;
-  bottom: 0px;
+}
+.copy {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .card-body {
-  padding-top: 0px;
+  margin: 5px 0 5px 0;
+  padding: 0px;
 }
 
-.btn {
-  background-color: #d54c4c;
-}
-
-.form-signin {
-  max-width: 100%;
-  padding: 20px;
-  margin: 0px 300px 50px 300px;
-  box-sizing: unset;
-}
 .form-signin .checkbox {
   font-weight: 400;
 }
@@ -105,4 +114,9 @@ footer {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: #ced4da;
+  box-shadow: none;
 }
