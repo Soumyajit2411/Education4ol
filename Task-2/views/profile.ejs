@@ -1,0 +1,94 @@
+<%- include('partials/header'); -%>
+      <div class="row profile">
+        <div class="de card" style="width: 15rem">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqReZKvgVWcJsY5_7HTtktbp0K1oFxpInCeg&usqp=CAU"
+            class="card-img-right"
+            alt="profile pic"
+          />
+          <div class="com card-body">
+            <h5 class="card-title">Soumyajit Roy</h5>
+            <p class="card-text">
+              <a class="dropdown-item" href="/">Profile</a>
+              <a class="dropdown-item" href="/">Photo</a>
+              <a class="dropdown-item" href="/">Account</a>
+              <a class="dropdown-item" href="/">Payment Method</a>
+              <a class="dropdown-item" href="/">Privacy</a>
+              <a class="dropdown-item" href="/">Notifications</a>
+              <a class="dropdown-item" href="/">Close Account</a>
+            </p>
+          </div>
+
+          <!-- <div class="buttons card-body">
+            <form class="left" action="/transaction" method="POST">
+              <button
+                class="btn btn-primary"
+                type="submit"
+                name="user"
+                value="Soumyajit"
+              >
+                Courses
+              </button>
+            </form>
+            <form class="right" action="/history" method="POST">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                name="user"
+                value="Soumyajit"
+              >
+                Dashboard
+              </button>
+            </form>
+          </div> -->
+        </div>
+        <div class="de card" style="width: 30rem">
+          <form>
+            <div class="mb-1">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-1">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <label for="exampleInputPassword1" class="form-label"
+              >Forgot Password</label
+            >
+            <div class="mb-1">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Change Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <button type="submit" class="save btn btn-primary">Save</button>
+          </form>
+        </div>
+      </div>
+      <%- include('partials/footer'); -%>

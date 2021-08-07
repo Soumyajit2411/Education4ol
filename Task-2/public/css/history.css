@@ -1,0 +1,85 @@
+.details {
+  width: 1000px;
+  margin: 50px 75px 100px 75px;
+  float: center;
+}
+
+.course-list {
+  height: 200px;
+  margin: 0px 20px 0px 0px;
+  padding: 25px;
+}
+.progresss {
+  color: white;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: 900;
+  background-color: transparent;
+  padding-bottom: 25px;
+  text-align: left;
+}
+.course-img {
+  float: left;
+  height: 150px;
+  width: 250px;
+}
+.become {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.become:hover {
+  color: white;
+  text-decoration-line: underline;
+}
+.information {
+  text-align: left;
+  margin-left: 25px;
+  float: left;
+}
+.informations {
+  float: right;
+}
+.cours {
+  margin: 0;
+  color: white;
+}
+.progress {
+  width: 200px;
+  border-radius: 50px;
+  margin-top: 60px;
+  height: 10px;
+  float: left;
+}
+.timess {
+  color: white;
+  font-size: 10px;
+  float: right;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-but {
+  background-color: transparent;
+  border: 0;
+  text-decoration: unset;
+}
+.dot-but:hover {
+  background-color: black;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+.share {
+  background-color: white;
+  color: black;
+}
+.share:hover {
+  background-color: rgb(22, 141, 238);
+  color: black;
+}

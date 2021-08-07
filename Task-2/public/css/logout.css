@@ -1,0 +1,76 @@
+body {
+  background-color: #e8f0f2;
+  margin: 50px 0 50px 0;
+  font-family: "Roboto", "Fira Sans", "Ubuntu", "Oxygen", "Cantarell",
+    sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.logout h1 {
+  margin: 20px;
+}
+
+footer {
+  background-color: #f3f3f3;
+  padding-top: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.social {
+  position: relative;
+  top: 200px;
+  font-size: 25px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%;
+}
+
+.fab {
+  transition: color 0.2s;
+  font-size: 55px;
+  margin: 20px;
+  color: #0086be;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+}
+
+.fa-linkedin:hover {
+  color: #dd4b39;
+}
+
+.fa-github:hover {
+  color: #517fa4;
+}
+
+.fa-telegram:hover {
+  color: #00adef;
+}

@@ -1,0 +1,122 @@
+body {
+  background-color: #fff;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bolder;
+  font-family: "Roboto", "Fira Sans", "Ubuntu", "Oxygen", "Cantarell",
+    sans-serif;
+}
+.body {
+  padding-top: 40px;
+}
+.form-signin {
+  margin: 0px 150px 0px 150px;
+  box-sizing: unset;
+}
+.form-sign {
+  margin: 0px 300px 0px 300px;
+  box-sizing: unset;
+}
+
+.cover-img {
+  position: relative;
+  margin: 20px;
+}
+
+.heading {
+  font-family: "Fira Sans", sans-serif;
+  position: absolute;
+  top: 8%;
+  left: 42%;
+  font-size: 30px;
+  color: aquamarine;
+}
+.loghead {
+  top: 14%;
+}
+.sub-heading {
+  font-size: 25px;
+}
+
+.float-container {
+  display: flex;
+}
+
+.first-child {
+  float: left;
+  width: 50%;
+}
+.second-child {
+  float: right;
+  width: 50%;
+}
+
+.form-control {
+  max-height: 45px;
+  margin: 10px;
+}
+.form-select {
+  margin: 10px;
+}
+
+.form-floating label {
+  margin: 11px 11px 11px 20px;
+  padding: 0;
+}
+
+.checkbox {
+  text-align: left;
+  margin: 15px;
+}
+
+.signin {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.signin a {
+  text-decoration: unset;
+}
+
+footer {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #edf6e5;
+  position: fixed;
+}
+.copy {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.card-body {
+  margin: 5px 0 5px 0;
+  padding: 0px;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
