@@ -1,0 +1,41 @@
+.infoo {
+  color: #ffffff;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 60%;
+  font-size: 25px;
+}
+.welcome {
+  font-size: 50px;
+  color: #001e6c;
+}
+.logo {
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #5089c6;
+  font-weight: 900;
+  font-size: 25px;
+}
+.text-lefts {
+  width: 180px;
+}
+.text-rights {
+  width: 100px;
+}
+/* .createbut {
+  margin-left: 100px;
+} */
+.logbtn {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  border-color: #ffffff;
+  border-radius: 50px;
+}
+.logbtn:hover {
+  color: aquamarine;
+  background-color: #ffffff;
+}

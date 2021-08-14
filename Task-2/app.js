@@ -6,6 +6,9 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
+  res.render("front");
+});
+app.get("/home", (req, res) => {
   res.render("home");
 });
 app.get("/login", (req, res) => {

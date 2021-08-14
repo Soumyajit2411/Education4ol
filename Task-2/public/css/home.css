@@ -6,10 +6,25 @@
   width: 40%;
   font-size: 25px;
 }
-
-.text-left {
-  width: 180px;
+.c {
+  color: white;
+  font-weight: 900;
 }
-.text-right {
-  width: 100px;
+h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
+  color: white;
+}
+#carouselExampleCaptions {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}
+.let {
+  text-align: center;
+}
+.carousel-caption{
+  font-family: "Merriweather", serif;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
 }
