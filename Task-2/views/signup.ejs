@@ -57,7 +57,7 @@
         <h1 class="sub-heading fw-bold">Sign Up</h1>
 
         <div class="first-child row">
-          <form action="/home">
+          <form action="/signup" method="POST">
             <div class="row g-2">
               <div class="col-md">
                 <div class="form-floating">
@@ -65,6 +65,7 @@
                     class="form-control"
                     id="floatingInput"
                     type="text"
+                    name="firstname"
                     placeholder="Name"
                   />
                   <label for="floatingInput">First Name</label>
@@ -76,6 +77,7 @@
                     class="form-control"
                     id="floatingInput"
                     type="text"
+                    name="lastname"
                     placeholder="Surname"
                   />
                   <label for="floatingInput">Last Name</label>
@@ -87,6 +89,7 @@
                 type="email"
                 class="form-control"
                 id="floatingInput"
+                name="username"
                 placeholder="name@example.com"
               />
               <label for="floatingInput">Email address</label>
@@ -96,6 +99,7 @@
                 type="password"
                 class="form-control"
                 id="floatingPassword"
+                name="password"
                 placeholder="Password"
               />
               <label for="floatingPassword">Password</label>
@@ -104,6 +108,7 @@
               <select
                 class="form-select"
                 id="floatingSelect"
+                name="country"
                 aria-label="Floating label select example"
               >
                 <option selected>Select</option>
@@ -380,20 +385,20 @@
             </div>
             <div class="checkbox mb-2">
               <label>
-                <input type="checkbox" value="remember-me" /> Subuscribe to
-                newsletter
+                <input type="checkbox" value="remember-me" name="newsletter" />
+                Subuscribe to newsletter
               </label>
             </div>
-            <button class=" btn btn-danger" type="submit">
-              Sign Up
-            </button>
+            <button class="btn btn-danger" type="submit">Sign Up</button>
             <p class="signin mt-2">
               Already have a account?&nbsp;<a href="signup.html">Sign In</a>
             </p>
           </form>
         </div>
         <div class="second-child row">
-          <p class="connect fw-bold">-&nbsp;&nbsp;or connect with&nbsp;&nbsp;-</p>
+          <p class="connect fw-bold">
+            -&nbsp;&nbsp;or connect with&nbsp;&nbsp;-
+          </p>
           <div class="card-body">
             <a
               class="btn btn-block btn-social btn-google"

@@ -57,13 +57,14 @@
         <h1 class="sub-heading fw-bold">Log In to Your Account!</h1>
 
         <div class="first-child row">
-          <form action="/home">
+          <form action="/login" method="POST">
             <div class="column">
               <div class="form-floating">
                 <input
                   type="email"
                   class="form-control"
                   id="floatingInput"
+                  name="username"
                   placeholder="name@example.com"
                 />
                 <label for="floatingInput">Email address</label>
@@ -73,6 +74,7 @@
                   type="password"
                   class="form-control"
                   id="floatingPassword"
+                  name="password"
                   placeholder="Password"
                 />
                 <label for="floatingPassword">Password</label>
@@ -81,12 +83,11 @@
 
             <div class="checkbox mb-2">
               <label>
-                <input type="checkbox" value="remember-me" /> Remember me
+                <input type="checkbox" value="remember-me" name="newsletter" />
+                Remember me
               </label>
             </div>
-            <button class="btn btn-danger" type="submit">
-              Sign in
-            </button>
+            <button class="btn btn-danger" type="submit">Sign in</button>
           </form>
         </div>
         <div class="second-child row">
