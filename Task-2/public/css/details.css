@@ -1,26 +1,33 @@
 .card-img-tops {
   height: 100px;
-  width: 200px;
+  width: 175px;
 }
 .det {
-  height: 100px;
+  height: 150px;
   padding-left: 0px;
+  text-align: left;
 }
 .courses-title {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
   font-size: 15px;
-  color: black;
+  color: white;
+  text-align: left;
+  height: 50px;
 }
 .cardss {
   border: 0;
   background-color: transparent;
-  margin: 15px;
+  margin: 10px;
 }
 .prices {
-  font-size: 15px;
+  font-weight: 900;
+  font-size: 13px;
   text-align: left;
+  color: white;
 }
 .coursess {
-  margin: 20px 30px 50px 30px;
+  margin: 20px 75px 50px 75px;
 }
 .programming {
   color: white;

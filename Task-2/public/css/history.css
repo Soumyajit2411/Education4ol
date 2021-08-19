@@ -24,6 +24,8 @@
   width: 250px;
 }
 .become {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
   font-size: 20px;
   color: white;
   text-decoration: none;
@@ -41,6 +43,7 @@
   float: right;
 }
 .cours {
+  font-family: "Merriweather", serif;
   margin: 0;
   color: white;
 }
@@ -65,15 +68,30 @@
   border-radius: 50%;
   display: inline-block;
 }
+.dot:hover {
+  background-color: black !important;
+}
 .dot-but {
   background-color: transparent;
   border: 0;
   text-decoration: unset;
 }
 .dot-but:hover {
-  background-color: black;
-  opacity: 0.2;
+  background: transparent !important;
   border-radius: 50%;
+  color: black;
+}
+.dot-but:focus {
+  background: transparent !important;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: none !important;
+}
+.dot-but:active {
+  background-color: transparent !important;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: none !important;
 }
 .share {
   background-color: white;
@@ -82,4 +100,15 @@
 .share:hover {
   background-color: rgb(22, 141, 238);
   color: black;
+}
+.share:focus {
+  background: #0690e0 !important;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.share:active {
+  background: #0476f8 !important;
+  outline: none;
+  box-shadow: none !important;
 }
