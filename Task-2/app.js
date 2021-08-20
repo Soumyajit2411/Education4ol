@@ -40,7 +40,7 @@ const userSchema = new mongoose.Schema({
   password: String,
   country: String,
   newsletter: String,
-  course: [courseSchema],
+  courses: [courseSchema],
 });
 
 userSchema.plugin(passportLocalMongoose);
@@ -98,9 +98,8 @@ app.get("/profile", (req, res) => {
 });
 
 app.get("/history", (req, res) => {
-  const user = new User();
-  user.course.find({}, (err, Course) => {
-    res.render("history", { Course: Course });
+  User.findById(req.user.id, (err, docs) => {
+    res.render("history", { Course: docs.courses });
   });
 });
 
@@ -192,28 +191,29 @@ app.post("/login", (req, res) => {
 });
 
 app.post("/details", (req, res) => {
-  const user = new User();
   const img = req.body.img;
+  const title = req.body.title;
+  const course = new Course({
+    img: img,
+    title: title,
+  });
+
   console.log(req.user.id);
+  var j = 0;
   User.findById(req.user.id, (error, docs) => {
     if (error) {
       console.log(error);
     } else {
       if (docs) {
-        user.course.findOne({ img: img }, (err, docs) => {
-          if (err) {
-            console.log(err);
-          } else {
-            if (docs) {
-              res.redirect("/details");
-            } else {
-              user.course.push({ title: req.body.title, img: req.body.img });
-              user.save((err) => {
-                if (!err) {
-                  res.redirect("/history");
-                }
-              });
-            }
+        docs.courses.forEach((docs) => {
+          if (docs.img == img) {
+            j = 1;
+          }
+        });
+        if (j == 0) docs.courses.push(course);
+        docs.save((err) => {
+          if (!err) {
+            res.redirect("/history");
           }
         });
       }
