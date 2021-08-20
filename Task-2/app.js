@@ -30,7 +30,6 @@ mongoose.connect("mongodb://localhost:27017/taskDB", {
 });
 
 const courseSchema = new mongoose.Schema({
-  id: String,
   title: String,
   img: String,
 });
@@ -99,7 +98,8 @@ app.get("/profile", (req, res) => {
 });
 
 app.get("/history", (req, res) => {
-  Course.find({}, (err, Course) => {
+  const user = new User();
+  user.course.find({}, (err, Course) => {
     res.render("history", { Course: Course });
   });
 });
@@ -192,11 +192,7 @@ app.post("/login", (req, res) => {
 });
 
 app.post("/details", (req, res) => {
-  const course = new Course({
-    id: req.user.id,
-    title: req.body.title,
-    img: req.body.img,
-  });
+  const user = new User();
   const img = req.body.img;
   console.log(req.user.id);
   User.findById(req.user.id, (error, docs) => {
@@ -204,14 +200,15 @@ app.post("/details", (req, res) => {
       console.log(error);
     } else {
       if (docs) {
-        Course.findOne({ img: img }, (err, docs) => {
+        user.course.findOne({ img: img }, (err, docs) => {
           if (err) {
             console.log(err);
           } else {
             if (docs) {
               res.redirect("/details");
             } else {
-              course.save((err) => {
+              user.course.push({ title: req.body.title, img: req.body.img });
+              user.save((err) => {
                 if (!err) {
                   res.redirect("/history");
                 }
