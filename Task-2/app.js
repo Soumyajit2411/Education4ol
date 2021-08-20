@@ -183,21 +183,6 @@ app.post("/signup", (req, res) => {
 });
 
 app.post("/login", (req, res) => {
-  // const username = req.body.username;
-  // const password = req.body.password;
-  // Task.findOne({ email: username }, (err, docs) => {
-  //   if (err) {
-  //     console.log(err);
-  //   } else {
-  //     if (docs) {
-  //       if (docs.password === password) {
-  //         res.render("home");
-  //       } else {
-  //         res.render("login");
-  //       }
-  //     }
-  //   }
-  // });
   const user = new User({
     username: req.body.username,
     password: req.body.password,
@@ -242,22 +227,6 @@ app.post("/details", (req, res) => {
       }
     }
   });
-
-  // Course.findOne({ img: img }, (err, docs) => {
-  //   if (err) {
-  //     console.log(err);
-  //   } else {
-  //     if (docs) {
-  //       res.redirect("/details");
-  //     } else {
-  //       course.save((err) => {
-  //         if (!err) {
-  //           res.redirect("/history");
-  //         }
-  //       });
-  //     }
-  //   }
-  // });
 });
 
 app.listen(port, () => {
