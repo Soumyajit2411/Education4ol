@@ -24,6 +24,10 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+function capitalize(s) {
+  return s[0].toUpperCase() + s.slice(1);
+}
+
 mongoose.connect("mongodb://localhost:27017/taskDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -83,7 +87,11 @@ app.get("/out", (req, res) => {
 
 app.get("/home", (req, res) => {
   if (req.isAuthenticated()) {
-    res.render("home");
+    User.findById(req.user.id, (err, docs) => {
+      res.render("home", {
+        proname: capitalize(docs.firstname) + " " + capitalize(docs.lastname),
+      });
+    });
   } else {
     res.redirect("/login");
   }
@@ -91,21 +99,37 @@ app.get("/home", (req, res) => {
 
 app.get("/profile", (req, res) => {
   if (req.isAuthenticated()) {
-    res.render("profile", { name: "Soumyajit Roy" });
+    User.findById(req.user.id, (err, docs) => {
+      res.render("profile", {
+        proname: capitalize(docs.firstname) + " " + capitalize(docs.lastname),
+        name: capitalize(docs.firstname) + " " + capitalize(docs.lastname),
+      });
+    });
   } else {
     res.redirect("/login");
   }
 });
 
 app.get("/history", (req, res) => {
-  User.findById(req.user.id, (err, docs) => {
-    res.render("history", { Course: docs.courses });
-  });
+  if (req.isAuthenticated()) {
+    User.findById(req.user.id, (err, docs) => {
+      res.render("history", {
+        proname: capitalize(docs.firstname) + " " + capitalize(docs.lastname),
+        Course: docs.courses,
+      });
+    });
+  } else {
+    res.redirect("/login");
+  }
 });
 
 app.get("/contact", (req, res) => {
   if (req.isAuthenticated()) {
-    res.render("contact");
+    User.findById(req.user.id, (err, docs) => {
+      res.render("contact", {
+        proname: capitalize(docs.firstname) + " " + capitalize(docs.lastname),
+      });
+    });
   } else {
     res.redirect("/login");
   }
@@ -113,7 +137,11 @@ app.get("/contact", (req, res) => {
 
 app.get("/about", (req, res) => {
   if (req.isAuthenticated()) {
-    res.render("about");
+    User.findById(req.user.id, (err, docs) => {
+      res.render("about", {
+        proname: capitalize(docs.firstname) + " " + capitalize(docs.lastname),
+      });
+    });
   } else {
     res.redirect("/login");
   }
@@ -121,30 +149,25 @@ app.get("/about", (req, res) => {
 
 app.get("/details", (req, res) => {
   if (req.isAuthenticated()) {
-    res.render("details");
+    User.findById(req.user.id, (err, docs) => {
+      res.render("details", {
+        proname: capitalize(docs.firstname) + " " + capitalize(docs.lastname),
+      });
+    });
   } else {
     res.redirect("/login");
   }
 });
 
 app.post("/signup", (req, res) => {
-  // const newUser = new Task({
-  //   lastname: req.body.lastname,
-  //   firstname: req.body.firstname,
-  //   email: req.body.username,
-  //   password: req.body.password,
-  //   country: req.body.country,
-  //   newsletter: req.body.newsletter,
-  // });
-  // newUser.save((err) => {
-  //   if (err) {
-  //     console.log(err);
-  //   } else {
-  //     res.render("home");
-  //   }
-  // });
   User.register(
-    { username: req.body.username },
+    {
+      username: req.body.username,
+      lastname: req.body.lastname,
+      firstname: req.body.firstname,
+      country: req.body.country,
+      newsletter: req.body.newsletter,
+    },
     req.body.password,
     (err, user) => {
       if (err) {
