@@ -43,12 +43,13 @@
           </div> -->
         </div>
         <div class="de card" style="width: 30rem">
-          <form>
+          <form action ="/change" method="POST">
             <div class="mb-1">
               <label for="exampleInputEmail1" class="form-label">Name</label>
               <input
-                type="email"
+                type="text"
                 class="form-control"
+                name="name"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -60,6 +61,7 @@
               <input
                 type="email"
                 class="form-control"
+                name="username"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -73,6 +75,7 @@
               >
               <input
                 type="password"
+                name="password"
                 class="form-control"
                 id="exampleInputPassword1"
               />
@@ -83,6 +86,7 @@
               >
               <input
                 type="password"
+                name="newpassword"
                 class="form-control"
                 id="exampleInputPassword1"
               />

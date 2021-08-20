@@ -229,6 +229,20 @@ app.post("/details", (req, res) => {
   });
 });
 
+app.post("/change", (req, res) => {
+  User.findById(req.user.id, (error, docs) => {
+    if (error) {
+      console.log(error);
+    } else {
+      req.user.changePassword(req.body.password, req.body.newpassword, (err) => {
+        if (!err) {
+          res.redirect("/profile");
+        }
+      });
+    }
+  });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
